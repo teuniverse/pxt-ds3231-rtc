@@ -175,7 +175,7 @@ namespace DS3231_RTC {
   //% block="year"
   //% weight=50 blockGap=8
   export function year(): number {
-    return getRegister(YEAR_REGISTER) + 2000;
+    return bcdToDec(getRegister(YEAR_REGISTER)) + 2000;
   }
 
   /**
