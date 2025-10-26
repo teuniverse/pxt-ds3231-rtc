@@ -1,0 +1,12 @@
+{
+  "name": "pxt-ds3231-rtc",
+  "version": "0.1.0",
+  "description": "MakeCode extension for DS3231 RTC Module",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": ["main.ts", "README.md"],
+  "testFiles": [],
+  "public": true
+}
