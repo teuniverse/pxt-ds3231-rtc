@@ -2,7 +2,7 @@
  * RTC (DS3231) block
  * See also datasheet at: https://www.analog.com/media/en/technical-documentation/data-sheets/ds3231.pdf
  */
-//% weight=100 color=#4c97ff icon="\u1f552" block="RTC"
+//% weight=100 color=#4c97ff icon="\uf017" block="RTC (DS3231)"
 namespace DS3231_RTC {
   const I2C_ADDRESS = 0x68;
 
@@ -63,7 +63,7 @@ namespace DS3231_RTC {
   /**
    * setTime
    */
-  //% block="time:|hours: $hours minutes: $minutes seconds: $seconds"
+  //% block="set time to: hours $hours minutes $minutes seconds $seconds"
   //% weight=100 blockGap=8
   //% inlineInputMode=inline
   //% hour.min=0 hour.max=23 mins.min=0 mins.max=59 secs.min=0 secs.max=59
@@ -85,7 +85,7 @@ namespace DS3231_RTC {
   /**
    * timeString
    */
-  //% block="time (string)"
+  //% block="time as string"
   //% weight=90 blockGap=8
   export function timeString(): string {
     return (
@@ -127,7 +127,7 @@ namespace DS3231_RTC {
   /**
    * setDate
    */
-  //% block="date:|weekday $weekday day $day month $month year $year"
+  //% block="set date to: weekday $weekday day $day month $month year $year"
   //% weight=70 blockGap=8
   //% inlineInputMode=inline
   //% weekday.min=1 weekday.max=7 day.min=1 day.max=31 month.min=1 month.max=12 year.min=2000 year.max=2099
@@ -157,7 +157,7 @@ namespace DS3231_RTC {
   /**
    * dateString
    */
-  //% block="date (string)"
+  //% block="date as string"
   //% weight=60 blockGap=8
   export function dateString(): string {
     return (
